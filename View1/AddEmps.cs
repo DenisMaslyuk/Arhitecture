@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EF
+namespace View1
 {
-    public partial class Form1 : Form
+    public partial class AddEmps : Form
     {
-        public Form1()
+        public AddEmps()
         {
             InitializeComponent();
         }
-
     }
 }
