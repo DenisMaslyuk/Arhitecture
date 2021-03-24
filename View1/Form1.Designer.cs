@@ -30,11 +30,6 @@ namespace View1
         private void InitializeComponent()
         {
             this.GridEmp = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Add = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
@@ -46,43 +41,11 @@ namespace View1
             // 
             this.GridEmp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.NameEmp,
-            this.Age,
-            this.Salary,
-            this.Position});
             this.GridEmp.Location = new System.Drawing.Point(13, 13);
             this.GridEmp.Name = "GridEmp";
             this.GridEmp.RowTemplate.Height = 25;
             this.GridEmp.Size = new System.Drawing.Size(775, 371);
             this.GridEmp.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.FillWeight = 20F;
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            // 
-            // NameEmp
-            // 
-            this.NameEmp.HeaderText = "Name";
-            this.NameEmp.Name = "NameEmp";
-            // 
-            // Age
-            // 
-            this.Age.HeaderText = "Age";
-            this.Age.Name = "Age";
-            // 
-            // Salary
-            // 
-            this.Salary.HeaderText = "Salary";
-            this.Salary.Name = "Salary";
-            // 
-            // Position
-            // 
-            this.Position.HeaderText = "Position";
-            this.Position.Name = "Position";
             // 
             // Add
             // 
@@ -150,11 +113,6 @@ namespace View1
         public System.Windows.Forms.Button Add;
         public System.Windows.Forms.Button Edit;
         public System.Windows.Forms.Button Delete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameEmp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Position;
         public System.Windows.Forms.Button DapperBtn;
     }
 }

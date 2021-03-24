@@ -1,4 +1,5 @@
 ﻿using BL;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,21 +14,18 @@ namespace View1
 {
     public partial class Form1 : Form
     {
+
         Logic logic = new Logic();
         public Form1()
         {
+            
             InitializeComponent();
             UpdateGrid();
         }
 
         public void UpdateGrid()
         {
-            GridEmp.Rows.Clear();
-            foreach (var em in logic.getData())
-            {
-                string[] row = {em.Id.ToString(), em.Name, em.Age.ToString(), em.Salary.ToString(), em.Position };
-                GridEmp.Rows.Add(row);
-            }
+            GridEmp.DataSource = logic.getData().ToList();
         }
 
         private void Add_Click(object sender, EventArgs e)

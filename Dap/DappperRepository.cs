@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Dap
 {
-    public class DappperRepository
+    public class DappperRepository<T> : IRepository<T> where T : class, IDomainObject, new()
     {
         public SqlConnection conn;
         public DappperRepository()
@@ -72,6 +72,16 @@ namespace Dap
                 var sqlQuery = "DELETE FROM Employee WHERE Id = @id";
                 db.Execute(sqlQuery, new { id });
             }
+        }
+
+        public IEnumerable<T> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(T Obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }
