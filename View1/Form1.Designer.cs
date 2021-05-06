@@ -66,7 +66,7 @@ namespace View1
             this.Edit.Text = "Edit";
             this.Edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Edit.UseVisualStyleBackColor = true;
-            this.Edit.Click += new System.EventHandler(this.Edit_Click);
+            //this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // Delete
             // 
@@ -88,7 +88,7 @@ namespace View1
             this.DapperBtn.Text = "Dapper";
             this.DapperBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.DapperBtn.UseVisualStyleBackColor = true;
-            this.DapperBtn.Click += new System.EventHandler(this.DapperBtn_Click);
+            //this.DapperBtn.Click += new System.EventHandler(this.DapperBtn_Click);
             // 
             // Form1
             // 

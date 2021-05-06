@@ -92,7 +92,7 @@ namespace View1
             this.Delete.Text = "Delete";
             this.Delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Delete.UseVisualStyleBackColor = true;
-            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            //this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Edit
             // 
@@ -103,7 +103,7 @@ namespace View1
             this.Edit.Text = "Edit";
             this.Edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Edit.UseVisualStyleBackColor = true;
-            this.Edit.Click += new System.EventHandler(this.Edit_Click);
+            //this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // Add
             // 
@@ -113,7 +113,7 @@ namespace View1
             this.Add.TabIndex = 4;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
+            //this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // DapperForm
             // 

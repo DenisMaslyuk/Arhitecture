@@ -39,19 +39,19 @@ namespace EF
             _context.SaveChanges();
         }
 
-        public void Update(Employee emnew)
-        {
-            Employee em = _context.Set<Employee>().Local.First(c => c.Id == emnew.Id);
-            if (em != null)
-            {
-                em.Name = emnew.Name;
-                em.Age = emnew.Age;
-                em.Salary = emnew.Salary;
-                em.Position = emnew.Position;
-                _context.SaveChanges();
-            }
+        //public void Update(Employee emnew)
+        //{
+        //    Employee em = _context.Set<Employee>().Local.First(c => c.Id == emnew.Id);
+        //    if (em != null)
+        //    {
+        //        em.Name = emnew.Name;
+        //        em.Age = emnew.Age;
+        //        em.Salary = emnew.Salary;
+        //        em.Position = emnew.Position;
+        //        _context.SaveChanges();
+        //    }
             
-        }
+        //}
 
     }
 }
